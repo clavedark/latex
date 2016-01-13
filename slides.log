@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 JAN 2016 09:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  13 JAN 2016 09:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -718,8 +718,8 @@ overpic: relative positioning in percent
 \c@saveenumi=\count172
 
 (/Users/dave/Library/texmf/tex/latex/misc/latex-beamer-3.07/themes/theme/beamer
-themeAnnArbor.sty
-Package: beamerthemeAnnArbor 2007/01/28  (rcs-revision 1.4)
+themeCambridgeUS.sty
+Package: beamerthemeCambridgeUS 2007/01/28  (rcs-revision 1.2)
 
 (/Users/dave/Library/texmf/tex/latex/misc/latex-beamer-3.07/themes/inner/beamer
 innerthemerounded.sty
@@ -730,8 +730,8 @@ outerthemeinfolines.sty
 Package: beamerouterthemeinfolines 2007/01/28  (rcs-revision 1.9)
 )
 (/Users/dave/Library/texmf/tex/latex/misc/latex-beamer-3.07/themes/color/beamer
-colorthemewolverine.sty
-Package: beamercolorthemewolverine 2007/01/28  (rcs-revision 1.6)
+colorthemebeaver.sty
+Package: beamercolorthemebeaver 2007/01/28  (rcs-revision 1.2)
 )) (./slides.aux)
 \openout1 = `slides.aux'.
 
@@ -899,6 +899,8 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [12
 
+] [13
+
 ]
 LaTeX Font Info:    Try loading font information for U+msa on input line 109.
 
@@ -909,17 +911,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 109.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [13
+) [14
 
 ]
-<somenumbers.pdf, id=380, 397.485pt x 289.08pt>
+<somenumbers.pdf, id=406, 397.485pt x 289.08pt>
 File: somenumbers.pdf Graphic file (type pdf)
  <use somenumbers.pdf>
 Package pdftex.def Info: somenumbers.pdf used on input line 119.
 (pdftex.def)             Requested size: 289.07999pt x 210.2459pt.
- [14
+ [15
 
- <./somenumbers.pdf>] [15
+ <./somenumbers.pdf>] [16
 
 ]
 \tf@nav=\write6
@@ -938,10 +940,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 13602 strings out of 493117
- 263280 string characters out of 6135433
+ 13605 strings out of 493117
+ 263332 string characters out of 6135433
  317468 words of memory out of 5000000
- 16662 multiletter control sequences out of 15000+600000
+ 16663 multiletter control sequences out of 15000+600000
  11111 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  49i,16n,59p,395b,574s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -952,10 +954,10 @@ usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/
 local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/lo
 cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on slides.pdf (15 pages, 1779559 bytes).
+Output written on slides.pdf (16 pages, 1781572 bytes).
 PDF statistics:
- 476 PDF objects out of 1000 (max. 8388607)
- 430 compressed objects within 5 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 455 compressed objects within 5 object streams
+ 34 named destinations out of 1000 (max. 500000)
  84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
