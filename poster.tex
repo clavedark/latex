@@ -1,0 +1,295 @@
+%uses beamerthemeDCPoster modified by dave clark august 2014
+% Written by Daina Chiba (daina.chiba@gmail.com).
+% Hijacked by Kyle Mackey (and now you...)
+% It was mostly copied from two poster style files:
+% beamerthemeI6pd2.sty written by
+%	 	Philippe Dreuw <dreuw@cs.rwth-aachen.de> and 
+% 		Thomas Deselaers <deselaers@cs.rwth-aachen.de>
+% and beamerthemeconfposter.sty written by
+%     Nathaniel Johnston (nathaniel@nathanieljohnston.com)
+%		http://www.nathanieljohnston.com/2009/08/latex-poster-template/
+% ---------------------------------------------------------------------------------------------------% 
+% Preamble
+% ---------------------------------------------------------------------------------------------------% 
+\documentclass[final]{beamer}
+\usepackage[orientation=landscape,size=a0,scale=1.2,debug]{beamerposter}
+\mode<presentation>{\usetheme{DCPoster}}
+%\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amsthm, amssymb, latexsym, ragged2e}
+\usepackage{overpic}
+\usepackage{array,booktabs,tabularx}
+\newcolumntype{Z}{>{\centering\arraybackslash}X} % centered tabularx columns
+
+% comment 
+\newcommand{\comment}[1]{}
+
+
+% (relative) path to the figures
+\graphicspath{{figs/}}
+
+\newlength{\columnheight}
+\setlength{\columnheight}{105cm}
+\newlength{\sepwid}
+\newlength{\onecolwid}
+\newlength{\twocolwid}
+\newlength{\threecolwid}
+\setlength{\sepwid}{0.024\paperwidth}
+\setlength{\onecolwid}{0.24\paperwidth}
+\setlength{\twocolwid}{0.4\paperwidth}
+\setlength{\threecolwid}{0.19\paperwidth}
+
+% ---------------------------------------------------------------------------------------------------% 
+% Title, author, date, etc.
+% ---------------------------------------------------------------------------------------------------% 
+\title{\huge Commitment Problems and Bargaining Failure: Experimental Evidence}
+\author{William Reed \and David Clark \and Timothy Nordstrom \and  Daniel Siegel}
+\institute[]{University of Maryland \quad  Binghamton University \quad University of Mississippi \quad University of Maryland}
+\date[August 2014]{August 2014}
+%%% Put the name of conference here.
+	\def\conference{} 
+ %%% Put your e-mail address here.
+ 	\def\yourEmail{APSA 2014, Washington, DC}
+
+
+% ---------------------------------------------------------------------------------------------------% 
+% Contents
+% ---------------------------------------------------------------------------------------------------% 
+\begin{document}
+\begin{frame}[t] 
+
+	\begin{columns}[t]
+    % -----------------------------------------------------------
+    % Start the first column
+    % -----------------------------------------------------------
+    \begin{column}{\onecolwid}
+      % -----------------------------------------------------------
+      % 1-1 (first column's first block
+      % -----------------------------------------------------------
+\vskip3ex
+      % -----------------------------------------------------------
+      % 1-1
+    \begin{block}{Objective: Identifying Commitment Problems}
+ 
+ Bargaining models of war point to two major causes of conflict: asymmetric information, and commitment problems. This paper focuses on the commitment problem, and specifically on how responsive bargainers are to expected changes in win probabilities. \\ ~\\
+ 
+Our goal is to evaluate whether bargainers can identify commitment problems - in lab experiments, we examine subjects' choices between bargaining and fighting, given shifts in win probabilities ($p$) and costs ($c$).\\~\\
+
+%  \end{block}
+%  
+%      %-- Block 1-1
+%      \begin{block}{What are Commitment Problems?} 
+% 
+
+
+Commitment problems arise when bargaining parties expect the value of conflict to shift in the future - the party for whom conflict becomes more valuable has incentives to abrogate any agreement reached today - it therefore {\it cannot  credibly commit to a settlement today, due to an expected increase in its value for conflict tomorrow,} and the chances of conflict today increase.\\~\\
+
+The primary factor that shapes the value of conflict is {\it shifts in power}. Shifts in relative power are the focus of much work in international relations. \\~\\ 
+
+We focus on how shifts in  $p_1, p_2$, the probability of winning conflict now, or later influence choices between bargaining and fighting.
+
+
+
+%This dynamic is often taken to characterize the circumstances facing states emerging from civil war or state failure, as they seek to build stable and enduring governance structures. Commitment problems like this also characterize interstate bargaining, where states cannot commit to present-day agreements because of likely changes in the distribution of capabilities in the future. 
+      \end{block}
+
+      %-- Block 1-2
+      \begin{block}{A General Model}
+      
+Following Powell (2006), let $M_1(t)$ represents state $i$'s expected value for conflict at time $t$; the size of the bargaining space is $\pi$, and the future value of conflict is discounted by $\delta$.
+\begin{equation}
+\delta(M_1(t+1)) - M_1(t) > \pi - (M_1(t) + M_2(t))
+\end{equation}
+
+This compares the rate of change in the chances of winning to the payoffs for bargaining. When this inequality holds, the shift in power (win probability) is greater than the payoff for a settlement, so bargaining fails and conflict follows. Substituting the typical costly lottery payoffs for $M(\cdot)$, and setting $\pi=1$ gives:
+
+\begin{equation}
+p_1-\delta p_2 > c_1+c_ 2
+\end{equation}
+
+This illustrates that the commitment problem is caused by the relationship between the shift in power (and therefore the chances of winning), and the sum of the costs of fighting.  The game plays out as follows:
+%      \end{block}
+%
+%      %-- Block 1-3
+%      \begin{block}{Bargaining Game}
+      
+  %    \begin{figure}[h!]
+\begin{center}
+\begin{tikzpicture}[scale=2.75]
+	\node at (0.55,-3) {1};
+\draw[thick, ->](0.75,-3)--(2.25,-2.25);
+\draw[thick, ->](0.75,-3)--(2.25,-3.75);
+	\node at (1.25,-2.35) {\small{lottery}};
+	\node at (3.85,-2.25) {~~\small{$(10p_1-c_1,10-10p_1-c_2)$}};
+	\node at (1.25,-3.65) {\small{bargain}};
+	\node at (2.45,-3.75) {{\bf 1}};
+\draw[thick, ->](2.65,-3.75)--(4.15,-3.75);
+\draw[thick, ->](2.65,-3.75)--(3.4,-3);
+	\node at (3.55,-3) {\small{10}};
+\draw[thick, ->](2.65,-3.75)--(3.4,-4.5);
+	\node at (3.5,-4.5) {\small{0}};
+\draw[thick] (3,-3.4) arc [radius=0.4, start angle=60, end angle=-60];
+	\node [above] at (3.4,-3.75) {\small{$x$}};
+	\node at (4.35,-3.75) {2};
+\draw[thick, ->](4.55,-3.75)--(6.05,-3);
+\draw[thick, ->](4.55,-3.75)--(6.05,-4.5);
+	\node at (5,-3.1) {\small{accept}};
+	\node at (6.9,-3) {\small{$(x,10-x)$}};
+	\node at (5,-4.4) {\small{reject}};
+	\node at (7.75,-4.5) {\small{$(10p_2-c_1,10-10p_2-c_2)$}};
+\end{tikzpicture}
+\end{center}
+\label{game}
+%\caption{{\bf Bargaining and the Future:} Player Chooses Lottery or Makes an Offer}\label{cpp}
+%\end{figure}
+
+      \end{block}
+
+
+
+	\end{column}
+
+    % -----------------------------------------------------------
+    % Start the second column
+    % -----------------------------------------------------------
+    \begin{column}{\twocolwid}
+    
+    
+      \begin{block}{Experiment Design}
+  
+  
+We evaluate this bargaining game in laboratory experiments involving 30 University of Maryland undergraduates playing 10 rounds each of the game, which proceed as follows:
+        \begin{itemize}
+        \item subjects are offered a chance to bargain over \$10; they can choose between playing a lottery now, or bargaining to divide \$10.
+                \item the subject wins the lottery now with probability $p_1$; the subject wins the lottery later (should bargaining fail) with probability $p_2$.
+                  \item the subject pays costs for either lottery, $c_1$, the computer pays costs, $c_2$.
+        \item if the subject decides to bargain, she demands some portion, $x$, of the \$10.
+        \item  the computer accepts if $x \leq \text{Nash}$, rejects otherwise, which results in the later lottery.
+        \item subjects know the structure of the game, $p_1$, $p_2$, $c_1$ and $c_2$.
+        \item a commitment problem exists (and bargaining should fail at the outset) if $(p_1-p_2)-(c_1+c_2)>0$
+        \end{itemize}
+
+
+%\vspace{.5cm}
+
+     \begin{block}{Analysis}
+         $p_1, p_2, c_1, c_2$ are drawn from a uniform distribution - the treatment is the combination of these variables such that a commitment problem only exists if $(p_1-p_2)-(c_1+c_2)>0$.
+     
+       \begin{columns}[T] 
+       \column{.48\textwidth}
+
+     \begin{figure}[htb]
+          \centering
+          \includegraphics[]{/users/dave/documents/2013/commitment_exp/apsa/data_distributions814.pdf}
+        \end{figure}
+
+The treatment ($(p_1-p_2)-(c_1+c_2)>0$) is  randomly assigned and continuous. \\~\\ 
+
+     \begin{figure}[htb]
+          \centering
+          \includegraphics[]{/users/dave/documents/2013/commitment_exp/apsa/demands_correct.pdf}
+        \end{figure}
+        
+	% Phantom column
+	\column{.01\textwidth}
+	\begin{beamercolorbox}[wd=.1in,ht=2in]{cboxg}\end{beamercolorbox}
+	\vskip2ex
+	
+    \column{.48\textwidth}
+
+          \begin{figure}[htb]
+          \centering
+          \includegraphics[]{/users/dave/documents/2013/commitment_exp/apsa/c_prob0814.pdf}
+        \end{figure}
+ \alert {Most (83\%) subject choices are ``correct'' - they bargain when the x-axis is less than zero, fight when it is greater than zero.     }
+                
+             \begin{figure}[htb]
+          \centering
+          \includegraphics[]{/users/dave/documents/2013/commitment_exp/apsa/demands_incorrect.pdf}
+        \end{figure}
+        
+        
+  \end{columns}
+  
+For subjects that {\bf correctly} decide to bargain {\bf [left panel]}, demands appear scattered randomly around Nash values. Subjects that {\bf incorrectly} decide to bargain {\bf [right panel]} appear to over-demand. 
+  
+\end{block}
+% \centering
+%\begin{minipage}[t]{.49\textwidth}
+%	\begin{center}
+%\begin{overpic}[tics=10]{/users/dave/documents/2013/commitment_exp/apsa/data_distributions814.pdf}
+% \put (20,85) {\huge$\displaystyle\gamma$}
+%\end{overpic}
+%
+%	\end{center}
+%	\end{minipage}
+
+  %        \end{block}
+          
+ %\begin{block}{Results}
+%      \vskip-2ex
+%      \begin{figure}[h]
+%	\hfill
+%	\begin{minipage}[t]{.49\textwidth}
+%	\begin{center}
+%	%\caption{}
+%		\includegraphics{/users/dave/documents/2013/commitment_exp/apsa/demands_correct.pdf}
+%	\end{center}
+%	\end{minipage}
+%	\hfill
+%	\begin{minipage}[t]{.49\textwidth}
+%	\begin{center}
+%	%\caption{Figure Title Here}
+%		\includegraphics{/users/dave/documents/2013/commitment_exp/apsa/demands_incorrect.pdf}
+%	\end{center}
+%	\end{minipage}
+%	\hfill
+%	\end{figure}
+%	\vskip3ex
+%
+%\vskip1ex
+%
+
+
+      \end{block}
+
+
+\end{column}
+
+    % -----------------------------------------------------------
+    % Start the third column
+    % -----------------------------------------------------------
+    \begin{column}{\onecolwid}
+\vskip3ex
+
+  
+
+      \begin{block}{Bargaining and Demands}
+  
+
+        \begin{figure}[htb]
+          \centering
+          \includegraphics{/users/dave/documents/2013/commitment_exp/apsa/demands1.pdf}
+          % \caption{{\bf Demands} These are the demands (in dollars), subjects make when they bargain. Demands in red are ``mistakes;'' subjects bargained when they should have fought. Linear fit indicates subjects who mistakenly bargain make increasingly aggressive demands. }
+        \end{figure}
+Demands (in dollars) plotted against equilibrium values, less than zero should bargain, greater than zero should fight. Demands in red are ``mistakes;'' subjects bargained when they should have fought. Linear fit indicates subjects who mistakenly bargain make increasingly aggressive demands. 
+      \end{block}
+\vspace{6cm}
+\begin{block}{Discussion}
+\begin{itemize}
+\item Subjects correctly identify commitment problems (i.e., correctly decide to bargain or fight) in 83\% of cases.
+\item Of the mistakes, 29 choose to fight when they should bargain, 21 choose to bargain when they should fight. 
+\item When subjects bargain, their demands vary with the commitment problem; those with commitment problems make larger average demands than those without.
+\item Demands are {\it decreasing} with respect to $(p_1-p_2)-(c_1+c_2)$ for subjects who {\it correctly} identify commitment problems.
+\item Demands are {\it increasing} with respect to $(p_1-p_2)-(c_1+c_2)$ for subjects who {\it incorrectly} bargain when they should fight.
+\item Each subject plays the game 10 times; neither demands nor choices between bargaining and fighting exhibit any sort of learning trend.
+\end{itemize}
+
+
+\end{block}
+	\end{column}
+\end{columns}
+\end{frame}
+\end{document}
+
