@@ -15,3 +15,13 @@ Mac: the LaTeX distribution is TeX Live. Go to the MacTeX users group at http://
 Here is a list of lots of editors - note that this list doesn't distinguish Mac/Windows. 
 
 http://tex.stackexchange.com/questions/339/latex-editors-ides
+
+There are lots of guides to LaTeX on the web - here are links to just a few of them:
+
+http://tug.ctan.org/info/lshort/english/lshort.pdf
+
+http://www.latex-tutorial.com/tutorials/
+
+https://en.wikibooks.org/wiki/LaTeX
+
+https://www.math.ucdavis.edu/~tracy/courses/math129/Guide_To_LaTeX.pdf
