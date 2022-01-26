@@ -1,7 +1,7 @@
 # latex
 latex templates
 
-LaTeX templates for article and beamer classes, for spring 2016 seminars.
+LaTeX templates for article and beamer classes, updated for spring 2022 seminars.
 
 LaTeX Installation:
 
